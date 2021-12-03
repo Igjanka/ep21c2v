@@ -8,20 +8,35 @@ class Kosar:
     """
 
     def __init__(self, termekek: dict[str, int]) -> None:
+        self.termekek = termekek
         """
         A kosár létrehozásakor beállítja az osztály attribútumait.
         """
         pass
 
-    def osszeg_lekerdezese(self) -> int:
+    def osszeg_lekerdezese(self,pay:str) -> int:
+        self.pay = pay
+
+
         """
         A vásárlás összegének lekérdezése.
 
         :return: A vásárlás összege Ft-ban.
         """
-        pass
 
     def termekek_lekerdezese(self) -> dict[str, int]:
+
+        dict = {}
+        dict["toll"] = "toll"
+        dict["ceruzaelem"] = "ceruzaelem"
+        dict["kefe"] = "kefe"
+        dict["filctoll"] = "filctoll"
+        dict["colostok"] = "colostok"
+        dict["HB ceruza"] = "HB ceruza"
+        dict["szatyor"] = "szatyor"
+        dict["csavarkulcs"] = "csavarkulcs"
+        dict["doboz"] = "doboz"
+        dict["toll"]
         """
         Az árucikk-mennyiség párok lekérdezése.
 
@@ -51,3 +66,4 @@ class Kosar:
         Kiírja a kosár tartalmát a konzolra.
         """
         pass
+
